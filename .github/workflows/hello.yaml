@@ -1,0 +1,11 @@
+name: Echo Hello World
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: Echo Hello World Step
+        run: echo "Hello World!"
+        
